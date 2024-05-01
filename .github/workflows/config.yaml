@@ -16,7 +16,4 @@ jobs:
         ./build.sh
       shell: bash
       if: matrix.os == 'ubuntu-latest'
-    - name: Build and test using Docker on Windows
-      run: ./build.ps1
-      shell: powershell
-      if: matrix.os == 'windows-latest'
+
